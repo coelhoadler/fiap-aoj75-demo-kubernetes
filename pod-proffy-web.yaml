@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: proffy-web
+  labels:
+    app: proffy-web
+spec:
+  containers:
+    - name: container-proffy-web
+      image: acoeelho/proffy-web
+      ports:
+        - containerPort: 80

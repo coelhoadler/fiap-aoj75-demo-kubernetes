@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: proffy-server
+  labels:
+    app: proffy-server
+spec:
+  containers:
+  - name: container-proffy-server
+    image: acoeelho/proffy-server
+    ports:
+      - containerPort: 3333
